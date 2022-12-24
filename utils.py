@@ -21,7 +21,7 @@ def get_candidate_by_pk(pk):
     Показать кандидата по номеру
     """
     for candidate in load_candidates():
-        if candidate['id'] == pk:
+        if candidate['pk'] == pk:
             return candidate
     return 'Not Found'
 
